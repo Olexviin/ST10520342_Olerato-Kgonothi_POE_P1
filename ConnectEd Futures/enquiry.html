@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Get Involved | ConnectEd Futures</title>
 </head>
 <body>
-    <header>
+
+<header>
+    <div class="header-inner">
         <h1>ConnectEd Futures</h1>
         <p>Breaking the digital divide, one student at a time in South African education.</p>
-
-        <style>
-            hr {
-                border: 0;
-                height: 10px;
-                background-color: rgb(168, 49, 49);
-            }
-        </style>
         <hr class="banner-line">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html" class="active">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
-    
+<main>
+
     <h1>Get Involved</h1>
     <p>Join us in breaking the digital divide and empowering students across South Africa.</p>
 
@@ -37,15 +35,15 @@
     <p>Your corporate sponsorship can provide laptops, internet access, and training to dozens of students. We work with you to create a customised sponsorship package that meets your CSR goals.</p>
 
     <ul>
-        <li><strong>Bronze:</strong> R10,000 - Provides 10 laptops</li>
-        <li><strong>Silver:</strong> R25,000 - Provides 25 laptops + training</li>
-        <li><strong>Gold:</strong> R50,000 - Provides 50 laptops + training + internet access</li>
-        <li><strong>Platinum:</strong> R100,000+ - Comprehensive school programme</li>
+        <li><strong>Bronze:</strong> R10,000 — Provides 10 laptops</li>
+        <li><strong>Silver:</strong> R25,000 — Provides 25 laptops + training</li>
+        <li><strong>Gold:</strong> R50,000 — Provides 50 laptops + training + internet access</li>
+        <li><strong>Platinum:</strong> R100,000+ — Comprehensive school programme</li>
     </ul>
 
     <h3>Volunteer Your Skills</h3>
     <p>We need passionate volunteers to help us refurbish laptops, train students, and mentor young people.</p>
-    
+
     <ul>
         <li><strong>IT Volunteers:</strong> Help refurbish and repair donated laptops.</li>
         <li><strong>Trainers:</strong> Assist with digital skills workshops at partner schools.</li>
@@ -62,42 +60,43 @@
         <li>Computer peripherals (keyboards, mice, monitors)</li>
         <li>Networking equipment</li>
     </ul>
-    
+
     <h2>Enquiry Form</h2>
     <p>Please complete the form below to express your interest in supporting ConnectEd Futures.</p>
 
     <form action="#" method="post">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
 
-        <label for="organisation">Organization (if applicable):</label><br>
-        <input type="text" id="organisation" name="organisation"><br><br>
+        <label for="organisation">Organization (if applicable):</label>
+        <input type="text" id="organisation" name="organisation">
 
-        <label for="enquiry-type">I'm Interested In:</label><br>
+        <label for="enquiry-type">I'm Interested In:</label>
         <select id="enquiry-type" name="enquiry-type" required>
-            <option value="">PLease select...</option>
+            <option value="">Please select...</option>
             <option value="sponsor">Become a Sponsor</option>
             <option value="volunteer">Become a Volunteer</option>
             <option value="laptop_donation">Laptop Donation</option>
             <option value="partnership">Partnership</option>
             <option value="other">Other</option>
-
         </select>
-        <br><br>
 
-        <label for="message">Additional Information:</label><br>
-        <textarea id="message" name="message" rows="4">"Tell us how you'd like to support ConnectEd Futures:"</textarea>
-        <br><br>
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us how you'd like to support ConnectEd Futures:"></textarea>
 
         <button type="submit">Submit Enquiry</button>
-    </form> 
-    <footer>
+    </form>
+
+</main>
+
+<footer class="site-footer">
+    <div class="site-footer-inner">
         <h4>ConnectEd Futures</h4>
         <p>Breaking the digital divide, one student at a time in South African education.</p>
 
@@ -115,20 +114,14 @@
         <p>Phone: +27 11 123 4567</p>
         <p>Address: 123 Education Street, Johannesburg, 2001</p>
 
-        <style>
-            hr {
-                border: 0;
-                height: 10px;
-                background-color: rgb(168, 49, 49);
-            }
-        </style>
         <hr class="banner-line">
 
         <h4>Keep in Touch with our social pages.</h4>
         <p>Facebook | Twitter | Instagram | LinkedIn</p>
 
         <p>&copy; 2023 ConnectEd Futures. All rights reserved.</p>
-    </footer>
-    
+    </div>
+</footer>
+
 </body>
 </html>
