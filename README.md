@@ -133,5 +133,77 @@ buttons, and stacked red separators).
 
 - **Fixed header covering page headings** — every page's `<main>`
   now has `padding-top: 22rem` (adjusting to `24rem` on small screens) so the first heading appears below the header.
+
+  PART 3 POE WED: Added Java Script Features;
+
+# ConnectEd Futures — Website (POE Part 3)
+
+> **Breaking the digital divide, one student at a time in South African education.**
+
+A dynamic, interactive, five-page website for **ConnectEd Futures**, a non-profit organisation that provides refurbished laptops, internet access, digital skills training, and mentorship to underprivileged high-school students across South Africa.
+
+This project is the **POE Part 3** submission. It builds upon the HTML and CSS from previous parts by introducing **JavaScript** to improve user experience, add interactivity, and make the site fully responsive.
+
+
+## Project Overview
+
+**Purpose:**
+Provide a public-facing site for ConnectEd Futures where visitors can
+learn about the organisation, view its programmes, and submit an enquiry
+to become a sponsor, volunteer, mentor, or laptop donor.
+
+**New in Part 3 (JavaScript):**
+The site is no longer static. It now features dynamic counters, a dark/light mode toggle, smart form validation, an interactive FAQ, a mobile slide-out menu, and a custom image light box gallery.
+
+
+## JavaScript Feature Set (Part 3)
+
+### Home Page (`index.html`)
+1. **Interactive Testimonial Slider:**
+   - **How it works:** The two student testimonials are stored in a JavaScript array. "Next" and "Previous" buttons allow the user to cycle through the quotes without reloading the page.
+   - **Skills shown:** DOM manipulation (`innerText`), Arrays, Event Listeners (`click`).
+2. **Typewriter Effect for Hero Subtitle:**
+   - **How it works:** The text *"Breaking the digital divide..."* types itself out letter-by-letter on page load using `setTimeout` and string manipulation.
+   - **Skills shown:** String manipulation, Asynchronous timing.
+3. **Scroll-to-Top Button:**
+   - **How it works:** A floating button appears in the bottom corner only after the user scrolls down 300px. Clicking it smoothly scrolls the user back to the top.
+   - **Skills shown:** Window events (`scroll`), DOM visibility toggling, `window.scrollTo()`.
+
+### About Page (`about.html`)
+1. **"Read More" Team Bios:**
+   - **How it works:** The team member bios are kept short. Clicking a "Read Full Bio" button expands the text smoothly using CSS class toggling.
+   - **Skills shown:** DOM manipulation (`classList.toggle`), Event handling.
+2. **Image Lightbox Gallery:**
+   - **How it works:** Clicking on a team member's photo opens a larger version of that image in a modal overlay, dimming the background. A close button or clicking outside the image closes the modal.
+   - **Skills shown:** Dynamic element creation, DOM styling, Event Delegation.
+
+### Services Page (`services.html`)
+1. **Interactive FAQ Accordion:**
+   - **How it works:** A new FAQ section (e.g., *"How do I apply for a laptop?"*). Clicking a question reveals the answer using a smooth CSS height transition, while closing any previously opened answers.
+   - **Skills shown:** DOM traversal (`nextElementSibling`), `classList` manipulation.
+2. **Laptop Eligibility Calculator:**
+   - **How it works:** A small form asking: *"What grade are you in?"* and *"Do you have a laptop at home?"* Based on the answers, JavaScript calculates if the student qualifies and displays a green (Qualified) or red (Not Eligible) result box.
+   - **Skills shown:** Conditional logic (`if/else`), reading form values, dynamic DOM updates.
+
+### Enquiry / Get Involved Page (`enquiry.html`)
+1. **Dynamic Form Validation:**
+   - **How it works:** Instead of relying solely on HTML `required`, JavaScript checks the input. It verifies if the email is formatted correctly (RegEx) and if the required fields are filled, showing red error messages below the fields if fail.
+   - **Skills shown:** Form handling (`e.preventDefault()`), Regular Expressions, Dynamic element creation.
+2. **Conditional Form Logic:**
+   - **How it works:** If the user selects "Become a Volunteer" from the dropdown, a new field appears asking *"What skills do you have?"*. If they select "Laptop Donation," the field changes to *"How many laptops?"*
+   - **Skills shown:** Event listening (`change`), DOM element creation and deletion based on conditions.
+
+### Features (Across All Pages)
+1. **Dark / Light Mode Toggle:**
+   - **How it works:** A moon/sun icon in the header. Clicking it toggles a `.dark-mode` class on the `<body>`. The choice is saved to `localStorage` so the theme persists as the user navigates between pages.
+   - **Skills shown:** `localStorage`, `classList.toggle`, DOM styling.
+2. **Mobile Hamburger Menu (Slide-out):**
+   - **How it works:** On small screens, the standard navigation links are replaced by a hamburger icon. Clicking it toggles a class that slides the full navigation menu in from the side of the screen.
+   - **Skills shown:** Responsive event handling, `classList.toggle`, CSS transitions triggered by JS.
+3. **Active Nav Link Highlighter:**
+   - **How it works:** JavaScript reads the current page URL (`window.location.pathname`). It automatically adds an `active` class to the matching link in the navigation, instead of manually hardcoding it in HTML.
+   - **Skills shown:** `window.location`, Array iteration, DOM manipulation.
+
+
   
 
