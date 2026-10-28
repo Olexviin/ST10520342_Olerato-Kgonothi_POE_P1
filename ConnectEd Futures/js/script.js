@@ -32,13 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (hamburger && navMenu) {
         
-        // 1. Click to open/close via the Hamburger (X) button
         hamburger.addEventListener("click", () => {
             navMenu.classList.toggle("nav-active");
             hamburger.classList.toggle("toggle-active");
         });
 
-        // 2. Swipe to Close functionality
         let touchStartX = 0;
         let touchEndX = 0;
 
@@ -52,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { passive: true });
 
         function handleSwipe() {
-            // If swiped more than 50px to the left, close the menu
             if (touchStartX - touchEndX > 50) {
                 navMenu.classList.remove("nav-active");
                 hamburger.classList.remove("toggle-active");
@@ -65,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const dotsContainer = document.getElementById("slider-dots");
 
     if (track && dotsContainer) {
-        // 1. Add all your testimonials here
         const testimonials = [
             {
                 quote: "\"ConnectEd Futures gave me the tools I needed to excel in my studies. I'm now studying Engineering at the University of Cape Town.\"",
